@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-row w-full h-7 bg-gray-800 justify-between">
+    <div className="flex flex-row h-7 bg-gray-800 justify-between">
       <div className="flex flex-row h-3 w-3">
         <a
           href="/"
@@ -12,11 +12,11 @@ export default function Footer() {
             width="26"
             height="26"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#808b96"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M7 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
@@ -38,11 +38,11 @@ export default function Footer() {
             width="19"
             height="19"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#808b96"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4"></path>
@@ -59,11 +59,11 @@ export default function Footer() {
             width="19"
             height="19"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="#808b96"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path d="M12 9v4"></path>
