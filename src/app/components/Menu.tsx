@@ -1,13 +1,16 @@
+'use client';
+import { usePathname } from 'next/navigation';
+import '../layout.css';
+
 export default function Menu() {
-  const currentUrl =
-    typeof window !== "undefined" ? window.location.pathname : "";
-  console.log(currentUrl);
+  const currentUrl = usePathname();
+
   return (
-    <div className="flex flex-row items-center justify-start bg-gray-800">
+    <div className="flex flex-row items-center justify-start bg-gray-800 ">
       <a
         href="/"
         className={`${
-          currentUrl === "/" ? "active-link bg-gray-900" : ""
+          currentUrl === "/" ? "active-link-menu bg-gray-900" : ""
         } w-44 h-10 shadow-inner cursor-pointer`}
       >
         <div className="flex flex-row gap-3 justify-center mt-2 border-x-gray-100">
@@ -34,7 +37,7 @@ export default function Menu() {
       <a
         href="/projects"
         className={`${
-          currentUrl === "/projects" ? "active-link bg-gray-900" : ""
+          currentUrl === "/projects" ? "active-link-menu bg-gray-900" : ""
         }  w-44 h-10 shadow-inner cursor-pointer`}
       >
         <div className="flex flex-row p-2 gap-3 justify-center">
@@ -66,7 +69,7 @@ export default function Menu() {
       <a
         href="/contact"
         className={`${
-          currentUrl === "/contact" ? "active-link bg-gray-900" : ""
+          currentUrl === "/contact" ? "active-link-menu bg-gray-900" : ""
         }  w-44 h-10 shadow-inner cursor-pointer`}
       >
         <div className="flex flex-row p-2 gap-3 justify-center">

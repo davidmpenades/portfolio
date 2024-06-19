@@ -1,6 +1,7 @@
+import { usePathname } from "next/navigation";
+
 export default function ContactIcon() {
-  const currentUrl =
-    typeof window !== "undefined" ? window.location.pathname : "";
+  const currentUrl = usePathname();
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

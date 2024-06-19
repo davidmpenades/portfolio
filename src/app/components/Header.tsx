@@ -1,8 +1,10 @@
+'use client'
+import Link from "next/link";
 import "./Header.css";
 
 export default function Header() {
   return (
-    <div>
+    <div className="grid grid-12 text-sm">
       <div className="flex flex-row w-full bg-gray-900 h-8 items-center justify-between">
         <div className="flex gap-1.5">
           <div className="bg-red-500 w-3 h-3 rounded-full ml-2 shadow-inner cursor-pointer"></div>
@@ -13,17 +15,16 @@ export default function Header() {
           Portfolio - David Studio Mode
         </div>
       </div>
-      <div className="flex flex-row bg-gray-800 h-8 text-gray-400 gap-4 items-center">
+      <div className="flex flex-row w-full bg-gray-800 h-8 text-gray-400 gap-4 items-center">
         <div className="dropdown">
           <p className="ml-2 cursor-pointer">File</p>
           <div className="dropdown-content items-center justify-center">
-            <a
-              href="/media/David_Moreno_Penadés.pdf"
+            <Link href="/public/David_Moreno_Penadés.pdf" 
               target="_blank"
               className="cv"
             >
               Descargar CV
-            </a>
+            </Link>
           </div>
         </div>
         <p className="cursor-pointer">Edit</p>

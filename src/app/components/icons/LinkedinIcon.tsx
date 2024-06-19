@@ -1,6 +1,4 @@
 export default function LinkedinIcon() {
-  const currentUrl =
-    typeof window !== "undefined" ? window.location.pathname : "";
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
