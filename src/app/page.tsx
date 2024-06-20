@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Statistics from "./components/Statistics";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
           <Image
             className="rounded-full"
@@ -13,19 +14,19 @@ export default function Home() {
             height={200}
           />
         </div>
-        <div className="flex flex-col">
+        <div className="flex-col px-8 md:flex">
           <h1 className="text-6xl font-bold items-center justify-center py-5">
             David Moreno Penadés
           </h1>
           <div className="flex md:flex-row flex-col gap-5">
-            <p className="text-xl ml-2">Desarrollador frontend web</p>
-            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900">
+            <p className="text-xl">Desarrollador frontend web</p>
+            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center">
               En busca de empleo
             </p>
           </div>
         </div>
+        <Statistics />
       </div>
-      {/* <Statistics /> */}
     </div>
   );
 }
