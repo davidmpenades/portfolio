@@ -1,13 +1,14 @@
-'use client';
-import { usePathname } from 'next/navigation';
-import '../layout.css';
+"use client";
+import { usePathname } from "next/navigation";
+import "../layout.css";
+import Link from "next/link";
 
 export default function Menu() {
   const currentUrl = usePathname();
 
   return (
-    <div className="flex flex-row items-center justify-start bg-gray-800 ">
-      <a
+    <div className="flex-row items-center justify-start bg-gray-800 hidden md:flex">
+      <Link
         href="/"
         className={`${
           currentUrl === "/" ? "active-link-menu bg-gray-900" : ""
@@ -33,8 +34,8 @@ export default function Menu() {
           </svg>
           <p className={`${currentUrl === "/" ? "" : "text-gray-400"}`}>Home</p>
         </div>
-      </a>
-      <a
+      </Link>
+      <Link
         href="/projects"
         className={`${
           currentUrl === "/projects" ? "active-link-menu bg-gray-900" : ""
@@ -65,8 +66,8 @@ export default function Menu() {
             Projects
           </p>
         </div>
-      </a>
-      <a
+      </Link>
+      <Link
         href="/contact"
         className={`${
           currentUrl === "/contact" ? "active-link-menu bg-gray-900" : ""
@@ -93,7 +94,7 @@ export default function Menu() {
             Contact
           </p>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

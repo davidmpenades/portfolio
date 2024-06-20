@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="flex flex-row h-7 bg-gray-800 justify-center md:justify-between">
+    <div className="flex flex-row h-7 bg-gray-800 justify-center md:justify-between w-full">
       <div className="hidden md:flex flex-row h-3 w-3">
         <a
           href="/"

@@ -27,7 +27,7 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <body className={`${inter.className} max-w-screen`}>
+      <body className={`${inter.className} grid h-full`}>
         <Header />
         <div className="flex flex-row">
           <nav className="flex bg-gray-800 min-h-screen w-16 justify-center">

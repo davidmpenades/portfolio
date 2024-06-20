@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <section className="text-gray-200 bg-gray-900 h-full p-1 sm:max-w-screen">
+    <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen">
       <div className="flex flex-col items-center">
         <div className="py-8">
           <Image
@@ -26,6 +26,6 @@ export default function Home() {
         </div>
       </div>
       {/* <Statistics /> */}
-    </section>
+    </div>
   );
 }

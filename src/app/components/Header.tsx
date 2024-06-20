@@ -1,5 +1,4 @@
-'use client'
-import Link from "next/link";
+"use client";
 import "./Header.css";
 
 export default function Header() {
@@ -19,12 +18,9 @@ export default function Header() {
         <div className="dropdown">
           <p className="ml-2 cursor-pointer">File</p>
           <div className="dropdown-content items-center justify-center">
-            <Link href="/public/David_Moreno_Penadés.pdf" 
-              target="_blank"
-              className="cv"
-            >
+            <a href="/David_Moreno_Penades.pdf" download className="cv">
               Descargar CV
-            </Link>
+            </a>
           </div>
         </div>
         <p className="cursor-pointer">Edit</p>
