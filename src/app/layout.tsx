@@ -31,7 +31,7 @@ export default function RootLayout({
         <Header />
         <div className="flex flex-row">
           <nav className="flex bg-gray-800 min-h-screen w-16 justify-center">
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-3 z-10">
               <ButtonHome />
               <ButtonProject />          
               <ButtonContact />
