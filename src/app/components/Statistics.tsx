@@ -1,4 +1,7 @@
-export default async function Statistics({ totalContributions, reposCount }: { totalContributions: number, reposCount: number }) {
+import { getServerSideProps } from "../lib/fetchData";
+
+export default async function Statistics() {
+  const { totalContributions, reposCount } = await getServerSideProps();
 
   return (
     <section className="bg-gray-900">
