@@ -49,13 +49,7 @@ export async function getServerSideProps() {
     }),
   });
   const data1: Data = await res1.json();
-  console.log({
-    first:
-      data1.data.user.contributionsCollection.contributionCalendar
-        .totalContributions,
-    second: data.length,
-  });
-
+ 
   return {
     totalContributions:
       data1.data.user.contributionsCollection.contributionCalendar

@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default async function Projects() {
   return (
-    <div className="bg-gray-900 h-full justify-items-center p-8">
-      <h1 className="text-5xl p-5">Proyectos Personales</h1>
-      <div className="relative h-96 w-96 m-5 mt-10 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl z-auto">
+    <div className="bg-gray-900 min-h-screen p-10 flex flex-col items-center">
+      <h1 className="text-5xl p-5 text-white">Proyectos Personales</h1>
+      <div className="relative h-96 w-96 m-5 mt-10 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
         <Image
           src="/imgs/Portfolio.png"
           alt=""
@@ -32,8 +32,8 @@ export default async function Projects() {
           </Link>
         </button>
       </div>
-      <h1 className="text-5xl p-5">Proyectos Escolares</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <h1 className="text-5xl py-8 px-4 text-white">Proyectos Escolares</h1>
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
         <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project4.png"
@@ -47,7 +47,6 @@ export default async function Projects() {
             <h2 className="text-2xl font-semibold mb-2">
               Web CUMESO Proyecto Final
             </h2>
-
             <p className="hidden group-hover:block text-white">
               Proyecto final de ciclo, una web para la empresa CUMESO. Aun no se
               ha subido a producción.
@@ -73,10 +72,7 @@ export default async function Projects() {
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-black">
-            <h2 className="text-2xl font-semibold mb-2">
-              e-Move
-            </h2>
-
+            <h2 className="text-2xl font-semibold mb-2">e-Move</h2>
             <p className="hidden group-hover:block text-white">
               App para el alquiler de bicicletas.
             </p>
@@ -135,7 +131,7 @@ export default async function Projects() {
             </p>
           </div>
           <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
-          <Link
+            <Link
               target="_blank"
               href="https://github.com/davidmpenades/wallashop_Angular16_nodeJS20_express"
               className="items-center mt-2 cursor-pointer"
