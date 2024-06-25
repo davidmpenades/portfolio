@@ -1,32 +1,4 @@
-export default async function Statistics() {
-  const now = new Date();
-  const oneYearAgo = new Date();
-  oneYearAgo.setFullYear(now.getFullYear() - 1);
-
-  const res = await fetch("https://api.github.com/users/davidmpenades/repos");
-  const data = await res.json();
-  
-  const res1 = await fetch("https://api.github.com/graphql", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-    },
-    body: JSON.stringify({
-      query: `
-        query {
-          user(login: "davidmpenades") {
-            contributionsCollection(from: "${oneYearAgo.toISOString()}", to: "${now.toISOString()}") {
-              contributionCalendar {
-                totalContributions
-              }
-            }
-          }
-        }
-      `,
-    }),
-  });
-  const data1 = await res1.json();
+export default async function Statistics({ totalContributions, reposCount }: { totalContributions: number, reposCount: number }) {
 
   return (
     <section className="bg-gray-900">
@@ -46,8 +18,7 @@ export default async function Statistics() {
 
               <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
                 {
-                  data1.data.user.contributionsCollection.contributionCalendar
-                    .totalContributions
+                  totalContributions
                 }
               </dd>
             </div>
@@ -57,7 +28,7 @@ export default async function Statistics() {
               </dt>
 
               <dd className="text-4xl font-extrabold text-blue-600 md:text-5xl">
-                {data.length}
+                {reposCount}
               </dd>
             </div>
           </dl>

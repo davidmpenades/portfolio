@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Statistics from "./components/Statistics";
+import { getServerSideProps } from "./lib/fetchData";
 
 export default async function Home() {
+  const { props: { totalContributions, reposCount } } = await getServerSideProps();
   return (
     <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen">
       <div className="flex flex-col items-center justify-items-center">
@@ -25,8 +27,9 @@ export default async function Home() {
             </p>
           </div>
         </div>
-        <Statistics />
+        <Statistics totalContributions={totalContributions} reposCount={reposCount} />
       </div>
     </div>
   );
 }
+
