@@ -5,7 +5,6 @@ export default async function Statistics() {
 
   const res = await fetch("https://api.github.com/users/davidmpenades/repos");
   const data = await res.json();
-  console.log(data)
   
   const res1 = await fetch("https://api.github.com/graphql", {
     method: "POST",
