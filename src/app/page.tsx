@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Statistics from "./components/Statistics";
-import { getServerSideProps } from "./lib/fetchData";
 import { Suspense } from "react";
 import SkeletonStatistic from "./components/ui/SkeletonStatistic";
+import Statistics from "./components/Statistics";
 
-export default async function Home() {
+export default function Home() {
   return (
     <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen">
       <div className="flex flex-col items-center justify-items-center">
@@ -35,4 +34,3 @@ export default async function Home() {
     </div>
   );
 }
-
