@@ -35,11 +35,11 @@ export default async function Projects() {
       </div>
       <h1 className="text-5xl py-8 px-4 text-white">Proyectos Escolares</h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
-        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-300 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project4.webp"
             alt=""
-            className="absolute w-full h-full inset-0 object-cover"
+            className="absolute w-full h-full inset-0 object-cover mt-5"
             width={300}
             height={300}
           />
@@ -96,8 +96,8 @@ export default async function Projects() {
             src="/imgs/project2.webp"
             alt=""
             className="absolute w-full h-full inset-0 object-cover"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
