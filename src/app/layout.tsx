@@ -12,6 +12,7 @@ import EmailIcon from "./components/icons/EmailIcon";
 import ButtonHome from "./components/sidebar/ButtonHome";
 import ButtonProject from "./components/sidebar/ButtonProject";
 import ButtonContact from "./components/sidebar/ButtonContact";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -24,7 +25,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="es">
       <body className={`${inter.className} grid h-full`}>
@@ -33,7 +33,7 @@ export default function RootLayout({
           <nav className="flex bg-gray-800 min-h-screen w-16 justify-center">
             <div className="flex flex-col items-center gap-3 z-10">
               <ButtonHome />
-              <ButtonProject />          
+              <ButtonProject />
               <ButtonContact />
               <Link
                 target="_blank"
@@ -65,6 +65,12 @@ export default function RootLayout({
           <div className="flex flex-col w-full">
             <Menu />
             {children}
+            <Toaster
+              richColors={true}
+              position="top-right"
+              closeButton={true}
+              offset={20}
+            />
           </div>
         </div>
         <Footer />
