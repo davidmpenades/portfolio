@@ -18,8 +18,9 @@ export default async function Projects() {
           <h2 className="text-4xl font-semibold mb-2">Portfolio</h2>
           <p className="text-sm font-medium uppercase tracking-wider mb-6"></p>
           <p className="hidden group-hover:block">
-            Esta misma app, empezando a utilizar Next.js como framework de
-            React.
+            Este portafolio es mi primera incursión en Next.js. Aquí muestro mis
+            proyectos y habilidades en desarrollo web, con un enfoque en la
+            velocidad y el diseño responsive.
           </p>
         </div>
         <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -28,7 +29,7 @@ export default async function Projects() {
             href="https://github.com/davidmpenades/portfolio"
             className="items-center mt-2 cursor-pointer"
           >
-            Saber más, visita el repositorio
+            Ver código, visita el repositorio
           </Link>
         </button>
       </div>
@@ -48,8 +49,9 @@ export default async function Projects() {
               Web CUMESO Proyecto Final
             </h2>
             <p className="hidden group-hover:block text-white">
-              Proyecto final de ciclo, una web para la empresa CUMESO. Aun no se
-              ha subido a producción.
+              Desarrollé esta web para la empresa CUMESO como parte de mi
+              proyecto final. La aplicación ofrece una interfaz amigable para
+              gestionar contenidos, aunque todavía no está en producción.
             </p>
           </div>
           <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -58,7 +60,7 @@ export default async function Projects() {
               href="https://github.com/davidmpenades/Web_CUMESO_Proyecto_Final"
               className="items-center mt-2 cursor-pointer"
             >
-              Saber más, visita el repositorio
+              Ver código, visita el repositorio
             </Link>
           </button>
         </div>
@@ -74,7 +76,9 @@ export default async function Projects() {
           <div className="absolute inset-x-5 text-black">
             <h2 className="text-2xl font-semibold mb-2">e-Move</h2>
             <p className="hidden group-hover:block text-white">
-              App para el alquiler de bicicletas.
+              e-Move es una aplicación innovadora para el alquiler de
+              bicicletas, diseñada para facilitar el transporte sostenible en la
+              ciudad.
             </p>
           </div>
           <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -83,7 +87,7 @@ export default async function Projects() {
               href="https://github.com/davidmpenades/Web_CUMESO_Proyecto_Final"
               className="items-center mt-2 cursor-pointer"
             >
-              Saber más, visita el repositorio
+              Ver código, visita el repositorio
             </Link>
           </button>
         </div>
@@ -101,8 +105,9 @@ export default async function Projects() {
               GuidaGrill
             </h2>
             <p className="hidden group-hover:block">
-              Aplicación para restaurante, realizada con Vue3, Springboot y
-              Laravel.
+              GuidaGrill es una aplicación para gestionar pedidos en un
+              restaurante, creada con Vue3, Spring Boot y Laravel para asegurar
+              un rendimiento óptimo y una administración eficiente.
             </p>
           </div>
           <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -111,7 +116,7 @@ export default async function Projects() {
               href="https://github.com/davidmpenades/Vue3_Laravel_Spring-Boot_GuidaGrill"
               className="items-center mt-2 cursor-pointer"
             >
-              Saber más, visita el repositorio
+              Ver código, visita el repositorio
             </Link>
           </button>
         </div>
@@ -125,9 +130,13 @@ export default async function Projects() {
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
-            <h2 className="text-2xl font-semibold mb-2 text-black">Wallashop</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-black">
+              Wallashop
+            </h2>
             <p className="hidden group-hover:block">
-              App imitacion de coches.net para compra de vehículos.
+              Wallashop es una plataforma inspirada en coches.net para la compra
+              y venta de vehículos, desarrollada con Angular, Node.js y Express
+              para proporcionar una experiencia de usuario fluida y segura.
             </p>
           </div>
           <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -136,7 +145,7 @@ export default async function Projects() {
               href="https://github.com/davidmpenades/wallashop_Angular16_nodeJS20_express"
               className="items-center mt-2 cursor-pointer"
             >
-              Saber más, visita el repositorio
+              Ver código, visita el repositorio
             </Link>
           </button>
         </div>
