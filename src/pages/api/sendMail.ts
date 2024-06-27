@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export default async (
+export default async function handler(
   req: {
     method: string;
     body: { name: string; email: string; message: string };
@@ -14,7 +14,7 @@ export default async (
     };
     setHeader: (arg0: string, arg1: string[]) => void;
   }
-) => {
+) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
 
