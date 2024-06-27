@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Suspense } from "react";
 import SkeletonStatistic from "./components/ui/SkeletonStatistic";
 import Statistics from "./components/Statistics";
+import Technologies from "./components/Technologies";
 
 export default function Home() {
   return (
@@ -29,7 +30,8 @@ export default function Home() {
         </div>
         <Suspense fallback={<SkeletonStatistic />}>
           <Statistics />
-        </Suspense>      
+        </Suspense> 
+        <Technologies />     
       </div>
     </div>
   );
