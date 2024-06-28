@@ -145,7 +145,7 @@ export default function ContactForm() {
                     type="submit"
                     disabled={isSubmitting}
                   >
-                    Send Message
+                    Enviar mensaje
                   </button>
                 </div>
               </Form>
