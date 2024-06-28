@@ -22,34 +22,34 @@ export default function Technologies() {
                 React
               </dd>
             </div>
-            <div className="flex flex-col px-4 py-8 items-center gap-5">
+            <div className="flex flex-col px-4 py-12 items-center gap-8">
               <Image
-                src="/imgs/nextjs.webp"
+                src="/imgs/next.webp"
                 alt="Next"
-                width={120}
-                height={120}
+                width={100}
+                height={100}
               />
               <dd className="text-4xl font-extrabold text-gray-400 md:text-5xl">
                 Next
               </dd>
             </div>
-            <div className="flex flex-col px-4 py-6 items-center gap-0">
+            <div className="flex flex-col px-4 py-12 items-center gap-8">
               <Image
                 src="/imgs/vue.webp"
                 alt="Vue"
-                width={320}
-                height={320}
+                width={100}
+                height={100}
               />
               <dd className="text-4xl font-extrabold text-gray-400 md:text-5xl">
                 Vue
               </dd>
             </div>
-            <div className="flex flex-col px-4 py-8 items-center gap-5">
+            <div className="flex flex-col px-4 py-12 items-center gap-8">
               <Image
                 src="/imgs/angular.webp"
-                alt="Angular"
-                width={120}
-                height={120}
+                alt="angular"
+                width={100}
+                height={100}
               />
               <dd className="text-4xl font-extrabold text-gray-400 md:text-5xl">
                 Angular
