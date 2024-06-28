@@ -95,6 +95,36 @@ export default function Menu() {
           </p>
         </div>
       </Link>
+      <Link
+        href="/aboutMe"
+        className={`${
+          currentUrl === "/aboutMe" ? "active-link-menu bg-gray-900" : ""
+        }  w-44 h-10 shadow-inner cursor-pointer`}
+      >
+        <div className="flex flex-row p-2 gap-3 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke={currentUrl === "/aboutMe" ? "#d4d8dc" : "#566472"}
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="icon icon-tabler icons-tabler-outline icon-tabler-user-code"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+            <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
+            <path d="M20 21l2 -2l-2 -2" />
+            <path d="M17 17l-2 2l2 2" />
+          </svg>
+          <p className={`${currentUrl === "/aboutMe" ? "" : "text-gray-400"}`}>
+            About me
+          </p>
+        </div>
+      </Link>
     </div>
   );
 }

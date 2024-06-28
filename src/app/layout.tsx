@@ -13,6 +13,7 @@ import ButtonHome from "./components/sidebar/ButtonHome";
 import ButtonProject from "./components/sidebar/ButtonProject";
 import ButtonContact from "./components/sidebar/ButtonContact";
 import { Toaster } from "sonner";
+import ButtonAboutMe from "./components/sidebar/ButtonAboutMe";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RootLayout({
               <ButtonHome />
               <ButtonProject />
               <ButtonContact />
+              <ButtonAboutMe />
               <Link
                 target="_blank"
                 href="https://github.com/davidmpenades"
