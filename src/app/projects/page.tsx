@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Projects() {
+export default function Projects() {
   return (
-    <div className="bg-gray-900 min-h-screen p-10 flex flex-col items-center">
-      <h1 className="text-5xl p-5 text-white">Proyectos Personales</h1>
-      <div className="relative h-96 w-96 m-5 mt-10 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+    <div className="bg-gray-900 min-h-screen p-8 md:p-10 flex flex-col items-center">
+      <h1 className="text-2xl md:text-5xl p-5 text-white">Proyectos Personales</h1>
+      <div className="relative h-48 w-48 sm:py-2 md:h-96 md:w-96 m-5 mt-10 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
         <Image
           src="/imgs/portfolio.webp"
           alt=""
@@ -15,56 +15,53 @@ export default async function Projects() {
         />
         <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
         <div className="absolute inset-x-5 text-white">
-          <h2 className="text-4xl font-semibold mb-2">Portfolio</h2>
-          <p className="text-sm font-medium uppercase tracking-wider mb-6"></p>
-          <p className="hidden group-hover:block">
+          <p className="hidden group-hover:block -mt-6 md:mt-7 text-xs md:text-2xl">
             Este portafolio es mi primera incursión en Next.js. Aquí muestro mis
             proyectos y habilidades en desarrollo web, con un enfoque en la
             velocidad y el diseño responsive.
           </p>
         </div>
-        <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+        <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
           <Link
             target="_blank"
             href="https://github.com/davidmpenades/portfolio"
-            className="items-center mt-2 cursor-pointer"
+            className="items-center mt-2 cursor-pointer text-center"
           >
-            Ver código, visita el repositorio
+            <span className="block md:hidden text-xs p-1">Ver código</span>
+            <span className="hidden md:block text-xl">Ver código, visita el repositorio</span>
           </Link>
         </button>
       </div>
-      <h1 className="text-5xl py-8 px-4 text-white">Proyectos Escolares</h1>
+      <h1 className="text-2xl md:text-5xl py-8 px-4 text-white">Proyectos Académicos</h1>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
-        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-300 overflow-hidden shadow-xl">
+      <div className="relative h-48 w-48 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project4.webp"
             alt=""
             className="absolute w-full h-full inset-0 object-cover mt-5"
-            width={300}
-            height={300}
+            width={400}
+            height={400}
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
-          <div className="absolute inset-x-5 text-black">
-            <h2 className="text-2xl font-semibold mb-2">
-              Web CUMESO Proyecto Final
-            </h2>
-            <p className="hidden group-hover:block text-white">
+        <div className="absolute inset-x-5 text-white">
+          <p className="hidden group-hover:block -mt-6 md:mt-7 text-xs md:text-2xl">
               Desarrollé esta web para la empresa CUMESO como parte de mi
               proyecto final. La aplicación ofrece una interfaz amigable para
               gestionar contenidos, aunque todavía no está en producción.
             </p>
           </div>
-          <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+          <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
             <Link
               target="_blank"
               href="https://github.com/davidmpenades/Web_CUMESO_Proyecto_Final"
-              className="items-center mt-2 cursor-pointer"
+              className="items-center mt-2 cursor-pointer text-center"
             >
-              Ver código, visita el repositorio
+              <span className="block md:hidden text-xs p-1">Ver código</span>
+              <span className="hidden md:block text-xl">Ver código, visita el repositorio</span>
             </Link>
           </button>
         </div>
-        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+        <div className="relative h-48 w-48 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project3.webp"
             alt=""
@@ -73,25 +70,25 @@ export default async function Projects() {
             height={600}
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
-          <div className="absolute inset-x-5 text-black">
-            <h2 className="text-2xl font-semibold mb-2">e-Move</h2>
-            <p className="hidden group-hover:block text-white">
+          <div className="absolute inset-x-5 text-white">
+            <p className="hidden group-hover:block -mt-6 md:mt-7 text-xs md:text-2xl">
               e-Move es una aplicación innovadora para el alquiler de
               bicicletas, diseñada para facilitar el transporte sostenible en la
               ciudad.
             </p>
           </div>
-          <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+          <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
             <Link
               target="_blank"
               href="https://github.com/davidmpenades/Web_CUMESO_Proyecto_Final"
-              className="items-center mt-2 cursor-pointer"
+              className="items-center mt-2 cursor-pointer text-center"
             >
-              Ver código, visita el repositorio
+              <span className="block md:hidden text-xs p-1">Ver código</span>
+              <span className="hidden md:block text-xl">Ver código, visita el repositorio</span>
             </Link>
           </button>
         </div>
-        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+        <div className="relative h-48 w-48 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project2.webp"
             alt=""
@@ -101,26 +98,24 @@ export default async function Projects() {
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
-            <h2 className="text-2xl font-semibold mb-2 text-black">
-              GuidaGrill
-            </h2>
-            <p className="hidden group-hover:block">
+            <p className="hidden group-hover:block -mt-6 md:mt-7 text-xs md:text-2xl">
               GuidaGrill es una aplicación para gestionar pedidos en un
               restaurante, creada con Vue3, Spring Boot y Laravel para asegurar
               un rendimiento óptimo y una administración eficiente.
             </p>
           </div>
-          <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+          <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
             <Link
               target="_blank"
               href="https://github.com/davidmpenades/Vue3_Laravel_Spring-Boot_GuidaGrill"
-              className="items-center mt-2 cursor-pointer"
+              className="items-center mt-2 cursor-pointer text-center"
             >
-              Ver código, visita el repositorio
+              <span className="block md:hidden text-xs p-1">Ver código</span>
+              <span className="hidden md:block text-xl">Ver código, visita el repositorio</span>
             </Link>
           </button>
         </div>
-        <div className="relative h-96 w-96 mx-auto mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+        <div className="relative h-48 w-48 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project1.webp"
             alt=""
@@ -130,22 +125,20 @@ export default async function Projects() {
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
-            <h2 className="text-2xl font-semibold mb-2 text-black">
-              Wallashop
-            </h2>
-            <p className="hidden group-hover:block">
+            <p className="hidden group-hover:block mt-0 md:mt-7 text-xs md:text-2xl">
               Wallashop es una plataforma inspirada en coches.net para la compra
               y venta de vehículos, desarrollada con Angular, Node.js y Express
               para proporcionar una experiencia de usuario fluida y segura.
             </p>
           </div>
-          <button className="absolute inset-x-5 bottom-8 py-3 rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
+          <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
             <Link
               target="_blank"
-              href="https://github.com/davidmpenades/wallashop_Angular16_nodeJS20_express"
-              className="items-center mt-2 cursor-pointer"
+              href="https://github.com/davidmpenades/Wallashop"
+              className="items-center mt-2 cursor-pointer text-center"
             >
-              Ver código, visita el repositorio
+              <span className="block md:hidden text-xs p-1">Ver código</span>
+              <span className="hidden md:block text-xl">Ver código, visita el repositorio</span>
             </Link>
           </button>
         </div>

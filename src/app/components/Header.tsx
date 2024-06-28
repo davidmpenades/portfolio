@@ -14,7 +14,7 @@ export default function Header() {
           Portfolio - David Studio Mode
         </div>
       </div>
-      <div className="flex flex-row w-full bg-gray-800 h-8 text-gray-400 gap-4 items-center">
+      <div className="flex flex-row max-w-full bg-gray-800 h-8 text-gray-400 gap-2 md:gap-4 items-center">
         <div className="dropdown">
           <p className="ml-2 cursor-pointer">File</p>
           <div className="dropdown-content items-center justify-center">
