@@ -109,20 +109,48 @@ export default function AboutMePage() {
                   <pre className="whitespace-pre-wrap break-words text-left text-xs md:text-xl leading-relaxed text-white">
                     <code>
                       {`{
-  "proactivo": true,
-  "trabajo_en_equipo": true,
-  "responsable": true,
-  "ganas_de_aprender": true,
-  "comunicacion_efectiva": true,
-  "adaptabilidad": true,
-  "resolucion_de_problemas": true,
-  "creatividad": true,
-  "liderazgo": true,
-  "gestion_del_tiempo": true,
-  "empatia": true,
-  "pensamiento_critico": true,
-  "capacidad_de_motivacion": true,
-  "toma_de_decisiones": true
+  "proactivo": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "trabajo_en_equipo": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "responsable": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "ganas_de_aprender": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "comunicacion_efectiva": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "adaptabilidad": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "resolucion_de_problemas": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "creatividad": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "liderazgo": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "gestion_del_tiempo": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "empatia": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "pensamiento_critico": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "capacidad_de_motivacion": `}
+                      <span className="text-blue-400">true</span>
+                      {`,
+  "toma_de_decisiones": `}
+                      <span className="text-blue-400">true</span>
+                      {`
 }`}
                     </code>
                   </pre>
