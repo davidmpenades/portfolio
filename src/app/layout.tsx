@@ -14,6 +14,7 @@ import ButtonProject from "./components/sidebar/ButtonProject";
 import ButtonContact from "./components/sidebar/ButtonContact";
 import { Toaster } from "sonner";
 import ButtonAboutMe from "./components/sidebar/ButtonAboutMe";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -67,6 +68,7 @@ export default function RootLayout({
           <div className="flex flex-col w-full">
             <Menu />
             {children}
+            <Analytics />
             <Toaster
               richColors={true}
               position="top-right"
