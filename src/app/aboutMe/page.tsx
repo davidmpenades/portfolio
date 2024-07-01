@@ -103,10 +103,10 @@ export default function AboutMePage() {
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-6 p-10">
               Habilidades Personales
             </h1>
-            <div className="flex justify-center items-start p-6">
+            <div className="flex justify-center items-start p-1 md:p-6">
               <div className="flex justify-center items-start bg-gray-900 mt-0">
-                <div className="flex bg-gray-800 rounded-lg shadow-md p-4 md:w-144 justify-center items-center">
-                  <pre className="whitespace-pre-wrap break-words text-left text-xs md:text-xl leading-relaxed text-white">
+                <div className="flex bg-gray-800 rounded-lg shadow-md p-0 md:p-4 md:w-144 justify-center items-center">
+                  <pre className="text-left text-xs md:text-xl leading-relaxed text-white p-0 md:p-10">
                     <code>
                       {`{
   "proactivo": `}
@@ -125,9 +125,6 @@ export default function AboutMePage() {
                       <span className="text-blue-400">true</span>
                       {`,
   "adaptabilidad": `}
-                      <span className="text-blue-400">true</span>
-                      {`,
-  "resolucion_de_problemas": `}
                       <span className="text-blue-400">true</span>
                       {`,
   "creatividad": `}
