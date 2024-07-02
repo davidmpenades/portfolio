@@ -44,7 +44,7 @@ export default function Projects() {
           <Image
             src="/imgs/project4.webp"
             alt=""
-            className="absolute w-full h-full inset-0 object-cover mt-5"
+            className="absolute w-full h-full inset-0 object-cover"
             width={400}
             height={400}
           />
@@ -60,7 +60,7 @@ export default function Projects() {
             <Link
               target="_blank"
               href="https://github.com/davidmpenades/Web_CUMESO_Proyecto_Final"
-              className="items-center mt-2 cursor-pointer text-center"
+              className="items-center cursor-pointer text-center"
             >
               <span className="block md:hidden text-sm p-1">Ver código</span>
               <span className="hidden md:block text-xl">

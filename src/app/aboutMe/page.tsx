@@ -93,7 +93,7 @@ export default function AboutMePage() {
               <Image
                 src="/imgs/tailwind.webp"
                 alt="about me"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-2xl"
                 width={100}
                 height={100}
               />
