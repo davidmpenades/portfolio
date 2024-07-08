@@ -53,7 +53,8 @@ export default function Projects() {
             <p className="hidden group-hover:block -mt-6 md:mt-7 text-base md:text-2xl overflow-auto max-h-40">
               Desarrollé esta web para la empresa CUMESO como parte de mi
               proyecto final. La aplicación ofrece una interfaz amigable para
-              gestionar contenidos, aunque todavía no está en producción.
+              gestionar el contenido en el dashboard con shop dinámico, aunque
+              todavía no está en producción.
             </p>
           </div>
           <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -82,7 +83,7 @@ export default function Projects() {
             <p className="hidden group-hover:block -mt-6 md:mt-7 text-base md:text-2xl overflow-auto max-h-40">
               e-Move es una aplicación innovadora para el alquiler de
               bicicletas, diseñada para facilitar el transporte sostenible en la
-              ciudad.
+              ciudad. Creada con React y Django.
             </p>
           </div>
           <button className="absolute inset-x-2 md:inset-x-5 bottom-3 md:bottom-8 py-0 md:py-3 max-w-xs mx-auto rounded-2xl font-semibold bg-gray-400 shadow-lg hidden transition duration-200 hover:bg-gray-300 group-hover:block">
@@ -98,13 +99,14 @@ export default function Projects() {
             </Link>
           </button>
         </div>
-        <div className="relative  h-56 w-56 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
+        <div className="relative h-56 w-56 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project2.webp"
             alt=""
             className="absolute w-full h-full inset-0 object-cover"
             width={250}
             height={250}
+            quality={100} 
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
@@ -127,6 +129,7 @@ export default function Projects() {
             </Link>
           </button>
         </div>
+
         <div className="relative  h-56 w-56 sm:text-xs sm:py-2 md:h-96 md:w-96 mx-auto mt-10 md:mt-20 px-5 py-8 group rounded-3xl bg-gray-200 overflow-hidden shadow-xl">
           <Image
             src="/imgs/project1.webp"
@@ -134,6 +137,7 @@ export default function Projects() {
             className="absolute w-full h-full inset-0 object-cover"
             width={600}
             height={600}
+            quality={100}
           />
           <div className="absolute inset-0 w-full h-full rounded-3xl bg-black bg-opacity-0 transition duration-500 backdrop-filter group-hover:bg-opacity-20 group-hover:backdrop-blur" />
           <div className="absolute inset-x-5 text-white">
