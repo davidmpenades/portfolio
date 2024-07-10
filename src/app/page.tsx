@@ -28,10 +28,15 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <div className="w-full md:w-4/6">
+          <p className="text-sm italic md:text-2xl bg-gray-800 text-white p-4 md:p-9 pl-6 md:pl-12 rounded-lg shadow-2xl relative m-10">
+            Con ganas de aprender y mejorar cada día. Me encanta el desarrollo web y todo lo que conlleva. Siempre dispuesto a ayudar y aportar mi granito de arena en cualquier proyecto.
+          </p>
+        </div>
         <Suspense fallback={<SkeletonStatistic />}>
           <Statistics />
-        </Suspense> 
-        <Technologies />     
+        </Suspense>
+        <Technologies />
       </div>
     </div>
   );
