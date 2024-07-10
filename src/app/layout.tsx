@@ -31,9 +31,9 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${inter.className} grid h-full`}>
         <Header />
-        <div className="flex flex-row">
+        <div className="flex flex-row mt-16 w-full">
           <nav className="flex bg-gray-800 min-h-screen w-16 justify-center">
-            <div className="flex flex-col items-center gap-3 z-10">
+            <div className="flex flex-col items-center gap-3 z-1 fixed">
               <ButtonHome />
               <ButtonProject />
               <ButtonContact />

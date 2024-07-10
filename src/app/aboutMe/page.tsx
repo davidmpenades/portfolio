@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMePage() {
   return (
-    <div className="flex flex-cols-2 bg-gray-900 w-full h-full">
+    <div className="flex flex-cols-2 bg-gray-900 w-full h-full lg:mt-10">
       <div className="bg-gray-900 text-gray-500 flex-shrink-0 p-1 hidden md:flex md:flex-col md:text-lg font-mono">
         {Array.from(Array(60), (e, i) => (
           <div key={i} className="h-6 flex justify-end items-center">
@@ -26,15 +26,7 @@ export default function AboutMePage() {
               </p>
             </div>
 
-            <div className="w-full md:w-1/2 shadow-2xl">
-              <Image
-                src="/imgs/aboutMe.webp"
-                alt="about me"
-                className="rounded-lg shadow-md"
-                width={800}
-                height={300}
-              />
-            </div>
+           
           </div>
           <div className="text-lg md:text-5xl">
             <h1 className="text-center text-3xl md:text-5xl font-bold mb-6 p-6">

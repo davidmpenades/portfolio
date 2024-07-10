@@ -23,7 +23,7 @@ export default function Home() {
           </h1>
           <div className="flex md:flex-row flex-col gap-5">
             <p className="text-xl">Desarrollador frontend web</p>
-            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center items-center animate-pulse">
+            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center items-center">
               En busca de empleo
             </p>
           </div>

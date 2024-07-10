@@ -10,7 +10,7 @@ export default function ButtonAboutMe() {
     return (
       <Link href="/aboutMe" className={`${
           currentUrl === "/aboutMe" ? "active-link" : ""
-        }items-start mt-2 cursor-pointer`}>
+        }items-start mt-2 cursor-pointer z-0`}>
           <AboutMe />
       </Link>
     );

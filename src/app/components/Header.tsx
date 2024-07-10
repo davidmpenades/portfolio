@@ -3,7 +3,7 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className="grid grid-12 text-sm">
+    <div className="grid grid-12 text-sm fixed w-full z-50">
       <div className="flex flex-row w-full bg-gray-900 h-8 items-center justify-between">
         <div className="flex gap-1.5">
           <div className="bg-red-500 w-3 h-3 rounded-full ml-2 shadow-inner cursor-pointer"></div>
