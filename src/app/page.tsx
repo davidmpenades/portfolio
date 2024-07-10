@@ -6,7 +6,7 @@ import Technologies from "./components/Technologies";
 
 export default function Home() {
   return (
-    <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen lg:mt-8">
+    <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen md:mt-8">
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
           <Image

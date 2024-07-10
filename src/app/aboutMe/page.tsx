@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMePage() {
   return (
-    <div className="flex flex-cols-2 bg-gray-900 w-full h-full lg:mt-10">
+    <div className="flex flex-cols-2 bg-gray-900 w-full h-full md:mt-10">
       <div className="bg-gray-900 text-gray-500 flex-shrink-0 p-1 hidden md:flex md:flex-col md:text-lg font-mono">
         {Array.from(Array(60), (e, i) => (
           <div key={i} className="h-6 flex justify-end items-center">
@@ -17,7 +17,7 @@ export default function AboutMePage() {
             Sobre mí
           </h1>
           <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-10 p-5">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-5/6">
               <p className="text-sm md:italic md:text-2xl bg-gray-800 text-white p-4 md:p-9 pl-6 md:pl-12 rounded-lg shadow-2xl relative">
                 A los 40 decidí dar un giro de 180 grados a mi vida y reciclarme
                 profesionalmente en una de mis pasiones, la informática y las
