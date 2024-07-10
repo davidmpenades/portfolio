@@ -6,11 +6,18 @@ import Technologies from "./components/Technologies";
 
 export default function Home() {
   return (
-    <div className="text-gray-200 bg-gray-900 h-full p-1 max-w-screen md:mt-8">
+    <div className="flex flex-cols-2 bg-gray-900 w-full h-full md:mt-10">
+      <div className="bg-gray-900 text-gray-500 flex-shrink-0 p-1 hidden md:flex md:flex-col md:text-lg font-mono">
+        {Array.from(Array(60), (e, i) => (
+          <div key={i} className="h-6 flex justify-end items-center">
+            <span className="mr-2">{i + 1}</span>
+          </div>
+        ))}
+      </div>
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
           <Image
-            className="rounded-full"
+            className="rounded-full shadow-xl"
             src="/imgs/profile.webp"
             alt="David Moreno Penadés"
             width={200}
@@ -22,8 +29,8 @@ export default function Home() {
             David Moreno Penadés
           </h1>
           <div className="flex md:flex-row flex-col gap-5">
-            <p className="text-xl">Desarrollador frontend web</p>
-            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center items-center flex">
+            <p className="text-xl shadow-2xl">Desarrollador frontend web</p>
+            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center items-center flex shadow-xl">
               En busca de empleo
             </p>
           </div>
