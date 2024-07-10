@@ -17,7 +17,7 @@ export default function Header() {
       <div className="flex flex-row max-w-full bg-gray-800 h-8 text-gray-400 gap-2 md:gap-4 items-center">
         <div className="dropdown">
           <p className="ml-2 cursor-pointer">File</p>
-          <div className="dropdown-content items-center justify-center">
+          <div className="dropdown-content items-center justify-center z-60">
             <a href="/David_Moreno_Penades.pdf" download className="cv">
               Descargar CV
             </a>

@@ -7,7 +7,7 @@ export default function Menu() {
   const currentUrl = usePathname();
 
   return (
-    <div className="flex-row items-center justify-start bg-gray-800 hidden md:flex fixed w-full z-50">
+    <div className="flex-row items-center justify-start bg-gray-800 hidden md:flex fixed w-full z-40">
       <Link
         href="/"
         className={`${
