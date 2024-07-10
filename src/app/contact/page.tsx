@@ -14,7 +14,7 @@ export default function ContactForm() {
     <div className="flex max-w-screen items-center h-full bg-gray-900">
       <div className="max-w-screen-md mx-auto p-10 rounded-lg bg-black">
         <div className="text-center mb-16">
-          <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-400 py-8  ">
+          <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-400">
             Contacte <span className="text-indigo-600">conmigo</span>
           </h3>
         </div>
@@ -99,7 +99,7 @@ export default function ContactForm() {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="example@domain.com"
+                        placeholder="ejemplo@gmail.com"
                       />
                     </div>
                     <ErrorMessage
@@ -141,7 +141,7 @@ export default function ContactForm() {
 
                 <div className="flex justify-start w-full px-3 mb-6">
                   <button
-                    className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                    className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-2 rounded"
                     type="submit"
                     disabled={isSubmitting}
                   >
