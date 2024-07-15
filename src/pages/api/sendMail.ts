@@ -8,9 +8,9 @@ export default async function handler(
   res: {
     status: (arg0: number) => {
       (): any;
-      new (): any;
-      json: { (arg0: { error?: string; message?: string }): void; new (): any };
-      end: { (arg0: string): void; new (): any };
+      new(): any;
+      json: { (arg0: { error?: string; message?: string }): void; new(): any };
+      end: { (arg0: string): void; new(): any };
     };
     setHeader: (arg0: string, arg1: string[]) => void;
   }
