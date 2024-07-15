@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export default async function handler(
   req: {
     method: string;
-    body: { name: string; email: string; message: string };
+    body: { name: string; email: string; message: string; recaptcha: string };
   },
   res: {
     status: (arg0: number) => {
@@ -35,10 +35,14 @@ export default async function handler(
         from: process.env.GMAIL,
         to: process.env.GMAIL,
         subject: `Nuevo mensaje de contacto de ${name}`,
-        html: `<p>Tienes un nuevo mensaje de contacto del portfolio</p><br>
-             <p><strong>Nombre:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Mensaje:</strong> ${message}</p>`,
+        html: `
+          <div style="font-family: Arial, sans-serif; color: #333;">
+            <h2>Tienes un nuevo mensaje de contacto del portfolio</h2>
+            <p><strong>Nombre:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Mensaje:</strong> ${message}</p>
+          </div>
+        `,
       });
       console.log("Mensaje enviado", emailRes.messageId);
       res.status(200).json({ message: "Mensaje enviado" });

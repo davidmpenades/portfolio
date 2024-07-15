@@ -1,5 +1,7 @@
 "use client";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
+import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "sonner";
 import * as Yup from "yup";
 
@@ -7,9 +9,11 @@ const contactSchema = Yup.object().shape({
   name: Yup.string().required("El nombre es requerido"),
   email: Yup.string().email("Email inválido").required("El email es requerido"),
   message: Yup.string().required("El mensaje es requerido"),
+  recaptcha: Yup.string().required("El reCAPTCHA es requerido"),
 });
 
 export default function ContactForm() {
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
   return (
     <div className="flex max-w-screen items-center h-full bg-gray-900">
       <div className="max-w-screen-md mx-auto p-10 rounded-lg bg-black">
@@ -25,7 +29,7 @@ export default function ContactForm() {
             </p>
           </div>
           <Formik
-            initialValues={{ name: "", email: "", message: "" }}
+            initialValues={{ name: "", email: "", message: "", recaptcha: "" }}
             validationSchema={contactSchema}
             onSubmit={async (values, { setSubmitting }) => {
               try {
@@ -34,7 +38,7 @@ export default function ContactForm() {
                   headers: {
                     "Content-Type": "application/json",
                   },
-                  body: JSON.stringify(values),
+                  body: JSON.stringify({ ...values, recaptcha: recaptchaToken }),
                 });
                 if (response.ok) {
                   console.log("Mensaje enviado correctamente");
@@ -55,7 +59,7 @@ export default function ContactForm() {
               }
             }}
           >
-            {({ isSubmitting }) => (
+            {({ isSubmitting, setFieldValue }) => (
               <Form className="w-full font-mono">
                 <div className="flex flex-wrap -mx-3 mb-6">
                   <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -137,6 +141,21 @@ export default function ContactForm() {
                       component="p"
                     />
                   </div>
+                </div>
+
+                <div className="flex justify-center mb-6">
+                  <ReCAPTCHA
+                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? ''}
+                    onChange={(value) => {
+                      setRecaptchaToken(value);
+                      setFieldValue("recaptcha", value);
+                    }}
+                  />
+                  <ErrorMessage
+                    className="text-red-500 text-xs italic"
+                    name="recaptcha"
+                    component="p"
+                  />
                 </div>
 
                 <div className="flex justify-start w-full px-3 mb-6">
