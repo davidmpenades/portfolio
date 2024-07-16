@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import SkeletonStatistic from "./components/ui/SkeletonStatistic";
 import Statistics from "./components/Statistics";
 import Technologies from "./components/Technologies";
+import Profile from "../../public/imgs/profile.webp"
 
 export default function Home() {
   return (
@@ -16,12 +17,11 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
-          <img
+          <Image
             className="rounded-full shadow-xl"
-            src="https://media.licdn.com/dms/image/D4D35AQEwScN1ENaSJA/profile-framedphoto-shrink_200_200/0/1721125525392?e=1721732400&v=beta&t=ShS5o2KSLlPwk6l-kg7fu_3WJz5Ql5aAc0xN5KpgDGw"
+            src={Profile}
             alt="David Moreno Penadés"
             width={200}
-            height={200}
           />
         </div>
         <div className="flex-col px-8 md:flex">
