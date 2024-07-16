@@ -16,9 +16,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
-          <Image
+          <img
             className="rounded-full shadow-xl"
-            src="/imgs/profile.webp"
+            src="https://media.licdn.com/dms/image/D4D35AQEwScN1ENaSJA/profile-framedphoto-shrink_200_200/0/1721125525392?e=1721732400&v=beta&t=ShS5o2KSLlPwk6l-kg7fu_3WJz5Ql5aAc0xN5KpgDGw"
             alt="David Moreno Penadés"
             width={200}
             height={200}
