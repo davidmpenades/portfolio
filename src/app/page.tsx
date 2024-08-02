@@ -4,6 +4,7 @@ import SkeletonStatistic from "./components/ui/SkeletonStatistic";
 import Statistics from "./components/Statistics";
 import Technologies from "./components/Technologies";
 import Profile from "../../public/imgs/profile.webp"
+import Typing from "./components/Typing";
 
 export default function Home() {
   return (
@@ -22,15 +23,18 @@ export default function Home() {
             src={Profile}
             alt="David Moreno Penadés"
             width={200}
+            height={200}
+            priority 
+            style={{ width: "200px", height: "auto" }}
           />
         </div>
         <div className="flex-col px-8 md:flex">
           <h1 className="text-6xl font-bold items-center justify-center py-5">
             David Moreno Penadés
           </h1>
-          <div className="flex md:flex-row flex-col gap-5">
-            <p className="text-xl shadow-2xl">Desarrollador frontend web</p>
-            <p className="bg-green-500 rounded-3xl w-48 px-4 py-1 text-gray-900 justify-center items-center flex shadow-xl">
+          <div className="grid grid-row gap-5">
+            <div className="text-lg md:text-3xl h-5 m-1 font-bold"><Typing /></div>
+            <p className="bg-green-500 rounded-3xl w-48 px-4 py-2 text-gray-900 justify-center items-center flex shadow-xl">
               En busca de empleo
             </p>
           </div>
