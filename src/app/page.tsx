@@ -33,9 +33,9 @@ export default function Home() {
             David Moreno Penadés
           </h1>
           <div className="grid grid-row gap-5">
-            <div className="text-lg md:text-3xl h-5 m-1 font-bold"><Typing /></div>
-            <p className="bg-green-500 rounded-3xl w-48 px-4 py-2 text-gray-900 justify-center items-center flex shadow-xl">
-              En busca de empleo
+            <div className="text-xl md:text-4xl h-5 m-1"><Typing /></div>
+            <p className="bg-green-500 rounded-3xl w-64 px-4 py-2 text-black justify-center items-center flex shadow-xl">
+              Busqueda activa de empleo
             </p>
           </div>
         </div>
