@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'arcade';
+  src: url('/fonts/Arcade.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+.typing-text {
+  font-family: 'arcade', sans-serif;
+}
