@@ -26,6 +26,9 @@ const config: Config = {
       animation: {
         typewriter: 'typewriter 4s steps(40) 1s 1 normal both, blink 750ms steps(40) infinite normal',
       },
+      width: {
+        '100': '1124px'
+      },
     },
   },
   plugins: [],
