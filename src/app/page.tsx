@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import SkeletonStatistic from "./components/ui/SkeletonStatistic";
 import Statistics from "./components/Statistics";
 import Technologies from "./components/Technologies";
-import Profile from "../../public/imgs/profile.webp"
+import Profile from "../../public/imgs/profie.webp"
 import Typing from "./components/Typing";
 
 export default function Home() {
@@ -19,13 +19,13 @@ export default function Home() {
       <div className="flex flex-col items-center justify-items-center">
         <div className="py-8">
           <Image
-            className="rounded-full shadow-xl"
+            className="rounded-xl shadow-xl"
             src={Profile}
             alt="David Moreno Penadés"
             width={200}
             height={200}
             priority 
-            style={{ width: "200px", height: "auto" }}
+            style={{ width: "150px", height: "auto" }}
           />
         </div>
         <div className="flex-col px-8 md:flex">
